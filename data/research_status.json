@@ -1,0 +1,15 @@
+{
+  "generated_at_utc": "2026-06-05T16:51:23Z",
+  "candidate_count": 173,
+  "backlog_count": 173,
+  "platform_count": 5,
+  "alert_candidate_count": 35,
+  "min_alert_score": 60,
+  "email_status": "dry_run_preview_only",
+  "next_required_inputs": [
+    "SMTP/email credentials",
+    "official source API or scraping permissions",
+    "Four.meme/PancakeSwap launch stream",
+    "X/Twitter, Telegram, Douyin/Bilibili source feeds"
+  ]
+}

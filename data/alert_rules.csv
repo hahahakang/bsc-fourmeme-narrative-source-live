@@ -1,0 +1,6 @@
+rule_id,rule_name,trigger_source_types,min_source_score,min_time_advantage_score,min_onchain_score,min_total_score,action,email_subject_template,why_it_matters,status
+ALERT_PRIMARY_0_50K,Primary source + early 0-50k,"person_founder,official_account,company_project,project",20,15,15,70,email_review,"[BSC Source Alert] {source_name} -> {token_label} early 0-50k","Primary or official source plus early FDV is the strongest repeatable pattern from the current research.",active
+ALERT_PLATFORM_LEADER,Launch platform first leader,"platform,launchpad,meme_launchpad",16,16,18,68,email_review,"[BSC Launch Alert] possible leader on {platform_name}: {token_label}","Launch platforms are primary issuance surfaces; leader/copycat speed matters.",active
+ALERT_CHINESE_MEME_FAST,Chinese meme with fast tokenization,"community_meme,media_ip",14,15,12,62,email_watch,"[BSC Meme Radar] {token_label} source needs fast check","Chinese meme sources can move before web search catches up; use watchlist until platform data is verified.",active
+ALERT_HIGH_RISK_SKIP,High score but risk penalty,"any",0,0,0,60,log_only,"[BSC Risk Log] skipped {token_label}","Keep false positives and skipped cases in the library so the model learns.",active
+

@@ -1,0 +1,292 @@
+#!/usr/bin/env python3
+"""Rebuild source backlog, launch-platform watchlist, and alert candidates."""
+
+from __future__ import annotations
+
+import argparse
+import csv
+import json
+import os
+from datetime import datetime, timezone
+from pathlib import Path
+from typing import Any, Iterable
+
+ROOT = Path(__file__).resolve().parents[1]
+DATA = ROOT / "data"
+STATE = DATA / "state"
+
+
+def utc_now() -> str:
+    return datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+
+
+def read_csv(path: Path) -> list[dict[str, str]]:
+    if not path.exists():
+        return []
+    with path.open("r", encoding="utf-8-sig", newline="") as f:
+        return list(csv.DictReader(f))
+
+
+def write_csv(path: Path, rows: Iterable[dict[str, Any]], fieldnames: list[str]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", encoding="utf-8", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer.writeheader()
+        for row in rows:
+            writer.writerow({key: row.get(key, "") for key in fieldnames})
+
+
+def write_json(path: Path, payload: Any) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+
+def to_float(value: Any) -> float:
+    try:
+        return float(value)
+    except (TypeError, ValueError):
+        return 0.0
+
+
+def source_score(row: dict[str, str]) -> int:
+    source_type = row.get("source_type_guess", "")
+    tag = row.get("narrative_tag", "")
+    status = row.get("source_status", "")
+    score = 0
+    if "company" in source_type or "project" in source_type:
+        score += 18
+    if "person" in source_type or "founder" in tag:
+        score += 16
+    if "ai_agent" in tag:
+        score += 8
+    if "binance" in tag:
+        score += 10
+    if "chinese_social_meme" in tag or "unmapped_chinese_meme" in tag:
+        score += 8
+    if status in {"已验证", "verified", "partial"}:
+        score += 8
+    if row.get("earliest_source_url"):
+        score += 8
+    return min(score, 25)
+
+
+def time_advantage_score(row: dict[str, str]) -> int:
+    bucket = row.get("first_buy_bucket", "")
+    minutes_to_sell = to_float(row.get("minutes_to_first_sell"))
+    score = 0
+    if bucket == "0-50k":
+        score += 14
+    elif bucket in {"50k-100k", "100k-200k"}:
+        score += 8
+    if minutes_to_sell <= 5:
+        score += 3
+    if row.get("buy_vs_source_window") in {"同日", "source before buy", "pre-amplification"}:
+        score += 4
+    return min(score, 20)
+
+
+def onchain_score(row: dict[str, str]) -> int:
+    fdv = to_float(row.get("first_buy_fdv_usd"))
+    liq = to_float(row.get("first_buy_approx_liquidity_usd_after"))
+    buy_bnb = to_float(row.get("buy_bnb"))
+    score = 0
+    if 0 < fdv <= 50_000:
+        score += 8
+    elif fdv <= 100_000:
+        score += 4
+    if 1_000 <= liq <= 30_000:
+        score += 5
+    if 0 < buy_bnb <= 1.5:
+        score += 4
+    if to_float(row.get("realized_pnl_bnb")) > 0:
+        score += 3
+    return min(score, 20)
+
+
+def risk_penalty(row: dict[str, str]) -> int:
+    penalty = 0
+    tag = row.get("narrative_tag", "")
+    source_type = row.get("source_type_guess", "")
+    if tag == "unknown" or source_type == "unknown":
+        penalty -= 12
+    if "person_name_only" in source_type:
+        penalty -= 20
+    if to_float(row.get("first_buy_fdv_usd")) > 100_000:
+        penalty -= 8
+    if not row.get("earliest_source_url"):
+        penalty -= 5
+    return max(penalty, -50)
+
+
+def build_source_backlog(candidates: list[dict[str, str]]) -> list[dict[str, Any]]:
+    rows: list[dict[str, Any]] = []
+    for row in sorted(candidates, key=lambda r: to_float(r.get("research_priority")), reverse=True):
+        s_score = source_score(row)
+        t_score = time_advantage_score(row)
+        c_score = onchain_score(row)
+        novelty = 12 if row.get("narrative_tag") not in {"unknown", "pure_meme"} else 5
+        penalty = risk_penalty(row)
+        total = max(0, s_score + t_score + c_score + novelty + penalty)
+        status = row.get("source_status") or "待追踪"
+        if row.get("earliest_source_url"):
+            next_step = "复核原始发布时间、截图和放大账号"
+        elif "chinese" in row.get("narrative_tag", "") or "meme" in row.get("source_type_guess", ""):
+            next_step = "补 Douyin/B站/微博首发、热榜和音频复用量"
+        elif "binance" in row.get("narrative_tag", ""):
+            next_step = "补 Binance/CZ/BNB Chain 官方原帖与 Four.meme 开池时间"
+        elif "ai_agent" in row.get("narrative_tag", ""):
+            next_step = "补项目官网、模型/agent 发布页、GitHub/产品库收录时间"
+        else:
+            next_step = "用 token 名称、部署时间和早期传播账号做源头检索"
+        rows.append(
+            {
+                "priority_score": total,
+                "research_priority": row.get("research_priority", ""),
+                "token_label": row.get("token_label", ""),
+                "token_address": row.get("token", ""),
+                "first_buy_time_utc": row.get("first_buy_time_utc", ""),
+                "first_buy_bucket": row.get("first_buy_bucket", ""),
+                "realized_pnl_bnb": row.get("realized_pnl_bnb", ""),
+                "narrative_tag": row.get("narrative_tag", ""),
+                "source_type_guess": row.get("source_type_guess", ""),
+                "source_status": status,
+                "source_score": s_score,
+                "time_advantage_score": t_score,
+                "onchain_score": c_score,
+                "risk_penalty": penalty,
+                "next_research_step": next_step,
+            }
+        )
+    return rows
+
+
+def build_alert_candidates(backlog: list[dict[str, Any]], platforms: list[dict[str, str]], min_score: int) -> list[dict[str, Any]]:
+    alerts: list[dict[str, Any]] = []
+    for row in backlog:
+        score = int(to_float(row.get("priority_score")))
+        if score < min_score:
+            continue
+        if row.get("source_type_guess") == "unknown" and row.get("risk_penalty", 0) <= -12:
+            action = "watchlist_only"
+        elif score >= 70:
+            action = "email_review"
+        else:
+            action = "email_watch"
+        alerts.append(
+            {
+                "alert_id": f"SRC-{len(alerts)+1:04d}",
+                "score": score,
+                "action": action,
+                "token_label": row.get("token_label", ""),
+                "token_address": row.get("token_address", ""),
+                "source_type": row.get("source_type_guess", ""),
+                "narrative_tag": row.get("narrative_tag", ""),
+                "first_buy_time_utc": row.get("first_buy_time_utc", ""),
+                "reason": row.get("next_research_step", ""),
+            }
+        )
+    for platform in platforms:
+        score = int(to_float(platform.get("watch_priority")))
+        if score >= min_score:
+            alerts.append(
+                {
+                    "alert_id": f"PLAT-{platform.get('platform_id')}",
+                    "score": score,
+                    "action": "platform_watch",
+                    "token_label": platform.get("platform_name", ""),
+                    "token_address": "",
+                    "source_type": platform.get("platform_type", ""),
+                    "narrative_tag": "launch_platform",
+                    "first_buy_time_utc": "",
+                    "reason": platform.get("what_to_monitor", ""),
+                }
+            )
+    return sorted(alerts, key=lambda r: int(to_float(r.get("score"))), reverse=True)
+
+
+def build_email_preview(alerts: list[dict[str, Any]]) -> str:
+    lines = [
+        "# BSC Four.meme Source Alerts",
+        "",
+        f"Generated at UTC: {utc_now()}",
+        "",
+        "This is a dry-run preview. No email was sent.",
+        "",
+    ]
+    for alert in alerts[:20]:
+        lines.extend(
+            [
+                f"## {alert['alert_id']} / score {alert['score']} / {alert['action']}",
+                f"- Target: {alert['token_label']}",
+                f"- Type: {alert['source_type']} / {alert['narrative_tag']}",
+                f"- Token: {alert['token_address']}",
+                f"- Reason: {alert['reason']}",
+                "",
+            ]
+        )
+    return "\n".join(lines)
+
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description="Rebuild narrative source research package")
+    parser.add_argument("--min-alert-score", type=int, default=int(os.environ.get("MIN_ALERT_SCORE", "60")))
+    args = parser.parse_args()
+
+    candidates = read_csv(DATA / "narrative_candidates.csv")
+    platforms = read_csv(DATA / "launch_platforms.csv")
+    backlog = build_source_backlog(candidates)
+    alerts = build_alert_candidates(backlog, platforms, args.min_alert_score)
+
+    write_csv(
+        DATA / "source_research_backlog.csv",
+        backlog,
+        [
+            "priority_score",
+            "research_priority",
+            "token_label",
+            "token_address",
+            "first_buy_time_utc",
+            "first_buy_bucket",
+            "realized_pnl_bnb",
+            "narrative_tag",
+            "source_type_guess",
+            "source_status",
+            "source_score",
+            "time_advantage_score",
+            "onchain_score",
+            "risk_penalty",
+            "next_research_step",
+        ],
+    )
+    write_csv(
+        DATA / "alert_candidates.csv",
+        alerts,
+        ["alert_id", "score", "action", "token_label", "token_address", "source_type", "narrative_tag", "first_buy_time_utc", "reason"],
+    )
+    write_json(
+        DATA / "research_status.json",
+        {
+            "generated_at_utc": utc_now(),
+            "candidate_count": len(candidates),
+            "backlog_count": len(backlog),
+            "platform_count": len(platforms),
+            "alert_candidate_count": len(alerts),
+            "min_alert_score": args.min_alert_score,
+            "email_status": "dry_run_preview_only",
+            "next_required_inputs": [
+                "SMTP/email credentials",
+                "official source API or scraping permissions",
+                "Four.meme/PancakeSwap launch stream",
+                "X/Twitter, Telegram, Douyin/Bilibili source feeds",
+            ],
+        },
+    )
+    preview = build_email_preview(alerts)
+    (STATE / "email_preview.md").parent.mkdir(parents=True, exist_ok=True)
+    (STATE / "email_preview.md").write_text(preview + "\n", encoding="utf-8")
+    print(json.dumps({"alerts": len(alerts), "backlog": len(backlog), "platforms": len(platforms)}, ensure_ascii=False, indent=2))
+
+
+if __name__ == "__main__":
+    main()
+

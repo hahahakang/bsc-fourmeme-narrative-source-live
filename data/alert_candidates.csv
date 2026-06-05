@@ -1,0 +1,36 @@
+alert_id,score,action,token_label,token_address,source_type,narrative_tag,first_buy_time_utc,reason
+PLAT-PLAT_FOURMEME,100,platform_watch,Four.meme,,meme_launchpad,launch_platform,,"new token creation, pool formation, early buys, creator wallet, first liquidity, migration/launch status"
+PLAT-PLAT_PANCAKE_SPRINGBOARD,90,platform_watch,PancakeSwap SpringBoard,,no_code_launch_platform,launch_platform,,"new SpringBoard launches, first liquidity on PancakeSwap, BNB Chain meme/token waves"
+PLAT-PLAT_PINKSALE,75,platform_watch,PinkSale,,launchpad,launch_platform,,"presales, fair launches, trending pools, deployer repetition, KYC/audit labels"
+PLAT-PLAT_GEMPAD,70,platform_watch,GemPad,,launchpad,launch_platform,,"new launches, launch calendar, deployer/project repetition, liquidity lock terms"
+SRC-0001,69,email_watch,CZ 🔶 BNB,0x6114ea6cc28ae5cd5e4a404e562ce4747de94444,company/project/person,binance+founder_person,2026-04-03 07:11:14,补 Binance/CZ/BNB Chain 官方原帖与 Four.meme 开池时间
+SRC-0002,69,email_watch,CS,0xca7ab98f4c43e5e92a8d2b8ef9b35c76a52a4444,company/project/person,binance+founder_person,2026-04-08 06:31:53,补 Binance/CZ/BNB Chain 官方原帖与 Four.meme 开池时间
+SRC-0003,69,email_watch,Dinance,0x42a3404651eb9ce4fce649d4999329481eea4444,company/project,binance,2026-05-07 08:02:44,补 Binance/CZ/BNB Chain 官方原帖与 Four.meme 开池时间
+SRC-0004,69,email_watch,BNB,0x9f391279cc2ab9e22768599fc7d0252644804444,company/project,binance,2026-03-31 09:44:36,补 Binance/CZ/BNB Chain 官方原帖与 Four.meme 开池时间
+SRC-0006,69,email_watch,TUWB,0x27b8d57c9e412757af6d7efabcbb637224f14444,company/project,binance,2026-05-06 07:02:22,补 Binance/CZ/BNB Chain 官方原帖与 Four.meme 开池时间
+SRC-0007,69,email_watch,大象,0x2824b90ccfbcae7e10e6e0d9aa69e8c226814444,company/project,binance,2026-03-09 02:08:58,补 Binance/CZ/BNB Chain 官方原帖与 Four.meme 开池时间
+SRC-0008,69,email_watch,导师CZ,0xcbf231e7ba9ebd6b6ec6253fcbc2091fcf7b4444,company/project/person,binance+founder_person,2026-03-14 02:23:31,补 Binance/CZ/BNB Chain 官方原帖与 Four.meme 开池时间
+SRC-0009,69,email_watch,BNB,0x491479c940b62171d46da6c74d93a6c245564444,company/project,binance,2026-05-03 13:37:26,补 Binance/CZ/BNB Chain 官方原帖与 Four.meme 开池时间
+SRC-0010,69,email_watch,AI何一,0x9d48014610228d0d0c9e6f83bf9b641711854444,company/project/category/person,binance+ai_agent+founder_person,2026-04-01 07:08:43,补 Binance/CZ/BNB Chain 官方原帖与 Four.meme 开池时间
+SRC-0011,69,email_watch,Meme candidates,0x7e4c5e2f76f74e95ff20959ee71433c3e6ec4444,company/project,binance,2026-03-30 10:33:45,补 Binance/CZ/BNB Chain 官方原帖与 Four.meme 开池时间
+SRC-0014,69,email_watch,COCO,0xb2df7b3df369be8d4d6b5a86425d72b90e3e4444,company/project,binance,2026-03-14 09:47:54,补 Binance/CZ/BNB Chain 官方原帖与 Four.meme 开池时间
+SRC-0017,69,email_watch,币安AI,0x4c938dc2aac0136f0adad3307e929ff94d564444,company/project/category,binance+ai_agent,2026-03-15 12:36:19,补 Binance/CZ/BNB Chain 官方原帖与 Four.meme 开池时间
+SRC-0018,69,email_watch,7,0x32b1fa9d307a19c119ab20219ba409f927334444,company/project,binance,2026-03-16 12:48:46,补 Binance/CZ/BNB Chain 官方原帖与 Four.meme 开池时间
+SRC-0020,69,email_watch,币安AI短剧比赛,0x8152871b4d3d3399d9c00800ea238ecda1264444,company/project/category,binance+ai_agent,2026-02-09 09:27:43,补 Binance/CZ/BNB Chain 官方原帖与 Four.meme 开池时间
+SRC-0022,69,email_watch,卡卡,0x94d76e03c312cfd895160bfb07e548914f154444,company/project/person,binance+founder_person,2026-03-30 02:14:31,补 Binance/CZ/BNB Chain 官方原帖与 Four.meme 开池时间
+SRC-0023,69,email_watch,Kahoot,0x76f2e86bff12fbb3e5c778a7f00e5d13f2894444,company/project,binance,2026-03-25 12:44:46,补 Binance/CZ/BNB Chain 官方原帖与 Four.meme 开池时间
+SRC-0025,69,email_watch,生化危机：币安绝境,0xbf1862b41f83a132af67813361b8cec895d34444,company/project,binance,2026-04-01 12:01:10,补 Binance/CZ/BNB Chain 官方原帖与 Four.meme 开池时间
+SRC-0027,69,email_watch,BinanceAI,0xcb20965ac329b0107d8f723f778bf0ca2c144444,company/project/category,binance+ai_agent,2026-03-16 05:26:08,补 Binance/CZ/BNB Chain 官方原帖与 Four.meme 开池时间
+SRC-0028,69,email_watch,zBNB,0x56c17ff3e8c216a6bb6d42d1e0aa8565d0524444,company/project,binance,2026-02-23 04:10:29,补 Binance/CZ/BNB Chain 官方原帖与 Four.meme 开池时间
+SRC-0005,66,email_watch,CZ,0x2b057db87cac1e419f30358b0097d1280ba84444,company/project/person,binance+founder_person,2026-02-11 06:57:25,补 Binance/CZ/BNB Chain 官方原帖与 Four.meme 开池时间
+SRC-0015,66,email_watch,BIBIClaw,0xa818853a06040a6ba9fb98ab34bbf56fe8444444,company/project/category,binance+ai_agent,2026-03-16 06:27:24,补 Binance/CZ/BNB Chain 官方原帖与 Four.meme 开池时间
+SRC-0016,66,email_watch,MARTIAN,0x4444e2614121dc92c3963c0dea45c1024a8e4a3d,company/project/category,binance+ai_agent,2026-04-19 11:00:50,补 Binance/CZ/BNB Chain 官方原帖与 Four.meme 开池时间
+SRC-0021,66,email_watch,SuperIntern,0x07375dd96aac45cb5e48c5b0cc3844a3067d4444,company/project/category,binance+ai_agent,2026-03-05 02:11:45,补 Binance/CZ/BNB Chain 官方原帖与 Four.meme 开池时间
+SRC-0026,66,email_watch,Stocks,0xdbdab51c866d570bdd491388ec6c1c7895bc4444,company/project,binance,2026-05-31 06:23:19,补 Binance/CZ/BNB Chain 官方原帖与 Four.meme 开池时间
+SRC-0012,65,email_watch,BAP,0x66f10363aa46e27215b7669898efc67a462f4444,company/project/category,binance+ai_agent,2026-03-23 08:41:40,补 Binance/CZ/BNB Chain 官方原帖与 Four.meme 开池时间
+SRC-0030,62,email_watch,币安恋,0x6657adbcaa70f579a46a13dbab7961695e434444,company/project,binance,2026-05-26 03:26:41,补 Binance/CZ/BNB Chain 官方原帖与 Four.meme 开池时间
+SRC-0019,61,email_watch,CZ,0xfecb0d1585223d3a7812913eb882862d47b44444,company/project/person,binance+founder_person,2026-03-18 04:33:31,补 Binance/CZ/BNB Chain 官方原帖与 Four.meme 开池时间
+SRC-0029,61,email_watch,币安人生,0xd2e416782917ea7aff6e995489bd0dd5b2047f67,company/project,binance,2026-04-16 14:26:00,补 Binance/CZ/BNB Chain 官方原帖与 Four.meme 开池时间
+SRC-0013,60,email_watch,Binance AI Pro,0x66e70721537e1cf2bcb290cb840c499dd62d4444,company/project/category,binance+ai_agent,2026-03-25 07:45:53,补 Binance/CZ/BNB Chain 官方原帖与 Four.meme 开池时间
+SRC-0024,60,email_watch,肉包,0x007be65c48bc24b8fdb85fddfc65e3884bba4444,category/meme/community,ai_agent+chinese_social_meme,2026-01-28 04:29:30,补 Douyin/B站/微博首发、热榜和音频复用量
+PLAT-PLAT_DXSALE,60,platform_watch,DxSale,,launchpad,launch_platform,,"new sales, liquidity locks, recurring deployers, first trading pool"

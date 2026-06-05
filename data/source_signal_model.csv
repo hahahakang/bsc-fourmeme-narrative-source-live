@@ -1,0 +1,6 @@
+signal_id,trigger,entry_window,market_node,evidence,action,source_quality_score,narrative_novelty_score,time_advantage_score,onchain_quality_score,liquidity_execution_score,risk_penalty,current_status
+S1_primary_source_to_0_50k,公司/创始人/项目官方发布新词、新产品、新角色、新功能,源头出现后 0-30 分钟内，且 Four.meme 已出现首个可交易 token,FDV < 50k，池子流动性约 2k-20k USD，买卖未失衡,当前交易员主要收益来自 0-50k 桶；需要叠加源头强度降低噪声,高优先级人工确认，不建议立即全自动买入,0-25,0-20,0-20,0-20,0-10,0 to -50,研究假设，需继续回测/前测
+S2_first_leader_not_copycat,同一叙事下短时间出现多个 token,优先第一个有真实流动性和成交的 token，copycat 只观察不追,部署早、池子先成型、成交量先放大,内盘优势来自早，不来自追高；龙头识别比单纯第一个部署更重要,做 leader/copycat 打分，低分跳过,0-25,0-20,0-20,0-20,0-10,0 to -50,研究假设，需继续回测/前测
+S3_fermentation_hold,买入后没有立即出圈，但源头足够强,允许 1h-24h 发酵；记录第一大 V/社区放大时间,低 FDV + 源头强 + 未被大号放大前,需要用本轮 holding window 统计做历史验证,提醒为主，分批仓位，设置时间止损,0-25,0-20,0-20,0-20,0-10,0 to -50,研究假设，需继续回测/前测
+S4_skip_high_fdv_chase,叙事已经被大号放大，FDV 已经明显上台阶,放大后追入,FDV > 100k 或流动性薄但涨幅已大,历史桶中 50k-200k 和 5m+ 整体负贡献明显,默认跳过，除非成交量/流动性同步扩张,0-25,0-20,0-20,0-20,0-10,0 to -50,研究假设，需继续回测/前测
+S5_source_library,同一人物/公司/项目多次带来有效 token,源头发布后的重复验证窗口,按 source_score + time_advantage + onchain_quality 综合评分,优质项目源/发币源才是可复用资产,进入 source library，持续记录命中和误报,0-25,0-20,0-20,0-20,0-10,0 to -50,研究假设，需继续回测/前测
