@@ -1,0 +1,81 @@
+review_id,total_radar_score,action,token_label,token_address,leader_or_copycat,leader_score,fdv_bucket,source_type,narrative_tag,time_edge_missing,next_human_check
+REV-0001,86,人工确认,CZ 🔶 BNB,0x6114ea6cc28ae5cd5e4a404e562ce4747de94444,leader_candidate,70,0-50k,company/project/person,binance+founder_person,source/deploy/pool/amplifier/breakout,补 Binance/CZ/BNB Chain 官方原帖与 Four.meme 开池时间
+REV-0002,86,人工确认,CS,0xca7ab98f4c43e5e92a8d2b8ef9b35c76a52a4444,leader_candidate,70,0-50k,company/project/person,binance+founder_person,source/deploy/pool/amplifier/breakout,补 Binance/CZ/BNB Chain 官方原帖与 Four.meme 开池时间
+REV-0003,86,人工确认,Dinance,0x42a3404651eb9ce4fce649d4999329481eea4444,leader_candidate,70,0-50k,company/project,binance,source/deploy/pool/amplifier/breakout,补 Binance/CZ/BNB Chain 官方原帖与 Four.meme 开池时间
+REV-0008,86,人工确认,BNB,0x9f391279cc2ab9e22768599fc7d0252644804444,leader_candidate,70,0-50k,company/project,binance,source/deploy/pool/amplifier/breakout,补 Binance/CZ/BNB Chain 官方原帖与 Four.meme 开池时间
+REV-0011,86,人工确认,TUWB,0x27b8d57c9e412757af6d7efabcbb637224f14444,leader_candidate,70,0-50k,company/project,binance,source/deploy/pool/amplifier/breakout,补 Binance/CZ/BNB Chain 官方原帖与 Four.meme 开池时间
+REV-0012,86,人工确认,大象,0x2824b90ccfbcae7e10e6e0d9aa69e8c226814444,leader_candidate,70,0-50k,company/project,binance,source/deploy/pool/amplifier/breakout,补 Binance/CZ/BNB Chain 官方原帖与 Four.meme 开池时间
+REV-0014,86,人工确认,导师CZ,0xcbf231e7ba9ebd6b6ec6253fcbc2091fcf7b4444,leader_candidate,70,0-50k,company/project/person,binance+founder_person,source/deploy/pool/amplifier/breakout,补 Binance/CZ/BNB Chain 官方原帖与 Four.meme 开池时间
+REV-0015,86,人工确认,BNB,0x491479c940b62171d46da6c74d93a6c245564444,leader_candidate,70,0-50k,company/project,binance,source/deploy/pool/amplifier/breakout,补 Binance/CZ/BNB Chain 官方原帖与 Four.meme 开池时间
+REV-0016,86,人工确认,AI何一,0x9d48014610228d0d0c9e6f83bf9b641711854444,leader_candidate,70,0-50k,company/project/category/person,binance+ai_agent+founder_person,source/deploy/pool/amplifier/breakout,补 Binance/CZ/BNB Chain 官方原帖与 Four.meme 开池时间
+REV-0018,86,人工确认,Meme candidates,0x7e4c5e2f76f74e95ff20959ee71433c3e6ec4444,leader_candidate,70,0-50k,company/project,binance,source/deploy/pool/amplifier/breakout,补 Binance/CZ/BNB Chain 官方原帖与 Four.meme 开池时间
+REV-0051,86,人工确认,COCO,0xb2df7b3df369be8d4d6b5a86425d72b90e3e4444,leader_candidate,70,0-50k,company/project,binance,source/deploy/pool/amplifier/breakout,补 Binance/CZ/BNB Chain 官方原帖与 Four.meme 开池时间
+REV-0061,86,人工确认,币安AI,0x4c938dc2aac0136f0adad3307e929ff94d564444,leader_candidate,70,0-50k,company/project/category,binance+ai_agent,source/deploy/pool/amplifier/breakout,补 Binance/CZ/BNB Chain 官方原帖与 Four.meme 开池时间
+REV-0062,86,人工确认,7,0x32b1fa9d307a19c119ab20219ba409f927334444,leader_candidate,70,0-50k,company/project,binance,source/deploy/pool/amplifier/breakout,补 Binance/CZ/BNB Chain 官方原帖与 Four.meme 开池时间
+REV-0064,86,人工确认,币安AI短剧比赛,0x8152871b4d3d3399d9c00800ea238ecda1264444,leader_candidate,70,0-50k,company/project/category,binance+ai_agent,source/deploy/pool/amplifier/breakout,补 Binance/CZ/BNB Chain 官方原帖与 Four.meme 开池时间
+REV-0071,86,人工确认,卡卡,0x94d76e03c312cfd895160bfb07e548914f154444,leader_candidate,70,0-50k,company/project/person,binance+founder_person,source/deploy/pool/amplifier/breakout,补 Binance/CZ/BNB Chain 官方原帖与 Four.meme 开池时间
+REV-0075,86,人工确认,Kahoot,0x76f2e86bff12fbb3e5c778a7f00e5d13f2894444,leader_candidate,70,0-50k,company/project,binance,source/deploy/pool/amplifier/breakout,补 Binance/CZ/BNB Chain 官方原帖与 Four.meme 开池时间
+REV-0009,83,人工确认,CZ,0x2b057db87cac1e419f30358b0097d1280ba84444,leader_candidate,70,0-50k,company/project/person,binance+founder_person,source/deploy/pool/amplifier/breakout,补 Binance/CZ/BNB Chain 官方原帖与 Four.meme 开池时间
+REV-0057,83,人工确认,BIBIClaw,0xa818853a06040a6ba9fb98ab34bbf56fe8444444,leader_candidate,70,0-50k,company/project/category,binance+ai_agent,source/deploy/pool/amplifier/breakout,补 Binance/CZ/BNB Chain 官方原帖与 Four.meme 开池时间
+REV-0058,83,人工确认,MARTIAN,0x4444e2614121dc92c3963c0dea45c1024a8e4a3d,leader_candidate,70,0-50k,company/project/category,binance+ai_agent,source/deploy/pool/amplifier/breakout,补 Binance/CZ/BNB Chain 官方原帖与 Four.meme 开池时间
+REV-0069,83,人工确认,SuperIntern,0x07375dd96aac45cb5e48c5b0cc3844a3067d4444,leader_candidate,70,0-50k,company/project/category,binance+ai_agent,source/deploy/pool/amplifier/breakout,补 Binance/CZ/BNB Chain 官方原帖与 Four.meme 开池时间
+REV-0024,82,人工确认,BAP,0x66f10363aa46e27215b7669898efc67a462f4444,leader_candidate,70,0-50k,company/project/category,binance+ai_agent,source/deploy/pool/amplifier/breakout,补 Binance/CZ/BNB Chain 官方原帖与 Four.meme 开池时间
+REV-0076,77,人工确认,肉包,0x007be65c48bc24b8fdb85fddfc65e3884bba4444,leader_candidate,70,0-50k,category/meme/community,ai_agent+chinese_social_meme,source/deploy/pool/amplifier/breakout,补 Douyin/B站/微博首发、热榜和音频复用量
+REV-0063,74,观察补证据,CZ,0xfecb0d1585223d3a7812913eb882862d47b44444,needs_human_check,55,0-50k,company/project/person,binance+founder_person,source/deploy/pool/amplifier/breakout,补 Binance/CZ/BNB Chain 官方原帖与 Four.meme 开池时间
+REV-0049,73,观察补证据,Binance AI Pro,0x66e70721537e1cf2bcb290cb840c499dd62d4444,needs_human_check,55,0-50k,company/project/category,binance+ai_agent,source/deploy/pool/amplifier/breakout,补 Binance/CZ/BNB Chain 官方原帖与 Four.meme 开池时间
+REV-0006,70,观察补证据,传统金融,0x97dda9801d38b1399200448b70442a4459a94444,needs_human_check,55,0-50k,company/project,binance,source/deploy/pool/amplifier/breakout,补 Binance/CZ/BNB Chain 官方原帖与 Four.meme 开池时间
+REV-0004,69,观察补证据,FFAI,0x0e21e9555d415a551fb12aecb356160221294444,leader_candidate,70,0-50k,category,ai_agent,source/deploy/pool/amplifier/breakout,补项目官网、模型/agent 发布页、GitHub/产品库收录时间
+REV-0005,69,观察补证据,流金谷恩仇录,0x900ae9e048d9b0bdab2d4cf947c7c246a0824444,leader_candidate,70,0-50k,category,ai_agent,source/deploy/pool/amplifier/breakout,补项目官网、模型/agent 发布页、GitHub/产品库收录时间
+REV-0010,69,观察补证据,AI gent,0x0566969ff0a59472a6693c758cf01cb98c684444,leader_candidate,70,0-50k,category,ai_agent,source/deploy/pool/amplifier/breakout,补项目官网、模型/agent 发布页、GitHub/产品库收录时间
+REV-0013,69,观察补证据,月之暗面,0x444428e122c0fd4f7e642cf91d73dff53622366c,leader_candidate,70,0-50k,category,ai_agent,source/deploy/pool/amplifier/breakout,补项目官网、模型/agent 发布页、GitHub/产品库收录时间
+REV-0017,69,观察补证据,BAI,0xc31e3e49d47ee3ad35993c8f887d0942aa7d4444,leader_candidate,70,0-50k,category,ai_agent,source/deploy/pool/amplifier/breakout,补项目官网、模型/agent 发布页、GitHub/产品库收录时间
+REV-0021,69,观察补证据,冲鸭,0x7528f0abcb9e4fd65859c92255aa889d02094444,leader_candidate,70,0-50k,meme/community,unmapped_chinese_meme,source/deploy/pool/amplifier/breakout,补 Douyin/B站/微博首发、热榜和音频复用量
+REV-0023,69,观察补证据,牛回！,0x5177b93950833dd74569091fad3bfb3a1ab04444,leader_candidate,70,0-50k,meme/community,unmapped_chinese_meme,source/deploy/pool/amplifier/breakout,补 Douyin/B站/微博首发、热榜和音频复用量
+REV-0026,69,观察补证据,QClaw,0x9eae0c56c5eb40d5b47c6c197573bc39adad4444,leader_candidate,70,0-50k,meme/community,unmapped_chinese_meme,source/deploy/pool/amplifier/breakout,补 Douyin/B站/微博首发、热榜和音频复用量
+REV-0029,69,观察补证据,幣安人生,0x6ce931ccb9484c00e7cbc7df0cce7c3d103b4444,leader_candidate,70,0-50k,meme/community,unmapped_chinese_meme,source/deploy/pool/amplifier/breakout,补 Douyin/B站/微博首发、热榜和音频复用量
+REV-0034,69,观察补证据,币圈一姐,0xada9108d2148604119b7861df7af0c3c83364444,leader_candidate,70,0-50k,meme/community,unmapped_chinese_meme,source/deploy/pool/amplifier/breakout,补 Douyin/B站/微博首发、热榜和音频复用量
+REV-0036,69,观察补证据,谎话精,0x1eede6b205290d58a05722dccf31f3227f794444,leader_candidate,70,0-50k,meme/community,unmapped_chinese_meme,source/deploy/pool/amplifier/breakout,补 Douyin/B站/微博首发、热榜和音频复用量
+REV-0038,69,观察补证据,慈善家,0xc75110b5959b61d7f4de0d425ce2d8377b924444,leader_candidate,70,0-50k,meme/community,unmapped_chinese_meme,source/deploy/pool/amplifier/breakout,补 Douyin/B站/微博首发、热榜和音频复用量
+REV-0041,69,观察补证据,致加密社区的一封公开信,0x614d6d3c765d66cb929469443eb626556e734444,leader_candidate,70,0-50k,meme/community,unmapped_chinese_meme,source/deploy/pool/amplifier/breakout,补 Douyin/B站/微博首发、热榜和音频复用量
+REV-0042,69,观察补证据,华山论剑,0xeee5c3876bb10a2d5752b28c10c0d307edfd4444,leader_candidate,70,0-50k,meme/community,unmapped_chinese_meme,source/deploy/pool/amplifier/breakout,补 Douyin/B站/微博首发、热榜和音频复用量
+REV-0047,69,观察补证据,东͏莞͏崇͏英͏学校,0x2e2c15a5b16012d89e3cdcaa5f4e6c8d8f2a4444,leader_candidate,70,0-50k,meme/community,unmapped_chinese_meme,source/deploy/pool/amplifier/breakout,补 Douyin/B站/微博首发、热榜和音频复用量
+REV-0052,69,观察补证据,热点雷达,0x697077192abd1d789c52b6425b3333bb216a4444,leader_candidate,70,0-50k,meme/community,unmapped_chinese_meme,source/deploy/pool/amplifier/breakout,补 Douyin/B站/微博首发、热榜和音频复用量
+REV-0055,69,观察补证据,尖叫鸡,0x1d8fbc1ff8755d5df67357d487a2e0f035ec4444,leader_candidate,70,0-50k,meme/community,unmapped_chinese_meme,source/deploy/pool/amplifier/breakout,补 Douyin/B站/微博首发、热榜和音频复用量
+REV-0056,69,观察补证据,一纸人生，半生自由,0xb9c78706ce79525058e43f76fcd1ac5cef234444,leader_candidate,70,0-50k,meme/community,unmapped_chinese_meme,source/deploy/pool/amplifier/breakout,补 Douyin/B站/微博首发、热榜和音频复用量
+REV-0059,69,观察补证据,红包女侠,0x36b012c02979a8da06f942889c651ef8b8564444,leader_candidate,70,0-50k,meme/community,unmapped_chinese_meme,source/deploy/pool/amplifier/breakout,补 Douyin/B站/微博首发、热榜和音频复用量
+REV-0067,69,观察补证据,FOURAGENT,0x44448544e30f01e2309e96ceb31a73146ccd995f,leader_candidate,70,0-50k,category,ai_agent,source/deploy/pool/amplifier/breakout,补项目官网、模型/agent 发布页、GitHub/产品库收录时间
+REV-0070,69,观察补证据,歪鼻巴卜,0xa408dca4afcee949abf0643671cd8e1359674444,leader_candidate,70,0-50k,meme/community,chinese_social_meme,source/deploy/pool/amplifier/breakout,补 Douyin/B站/微博首发、热榜和音频复用量
+REV-0072,69,观察补证据,贾维斯,0x02a2351059234f2783b800358eff8c2cc53b4444,leader_candidate,70,0-50k,category,ai_agent,source/deploy/pool/amplifier/breakout,补项目官网、模型/agent 发布页、GitHub/产品库收录时间
+REV-0074,69,观察补证据,我以后不赌了,0x3ef726885e017baa8c42ef6f6f17915418084444,leader_candidate,70,0-50k,meme/community,chinese_social_meme,source/deploy/pool/amplifier/breakout,补 Douyin/B站/微博首发、热榜和音频复用量
+REV-0007,66,观察补证据,比比拉布,0xd730680f1dac564d4b289eb0dbbef7b23fda4444,leader_candidate,70,0-50k,meme/community,chinese_social_meme,source/deploy/pool/amplifier/breakout,补 Douyin/B站/微博首发、热榜和音频复用量
+REV-0019,66,观察补证据,神仝,0x478aebe7758c29e29ca71147a57e1063fc764444,leader_candidate,70,0-50k,category,ai_agent,source/deploy/pool/amplifier/breakout,补项目官网、模型/agent 发布页、GitHub/产品库收录时间
+REV-0022,66,观察补证据,马维斯,0x13762a21d45d102078269b0b0ac9a954104e4444,leader_candidate,70,0-50k,meme/community,unmapped_chinese_meme,source/deploy/pool/amplifier/breakout,补 Douyin/B站/微博首发、热榜和音频复用量
+REV-0028,66,观察补证据,马上有钱,0x49769e06a8fdc9df45de40927bb89fae6ccd4444,leader_candidate,70,0-50k,meme/community,unmapped_chinese_meme,source/deploy/pool/amplifier/breakout,补 Douyin/B站/微博首发、热榜和音频复用量
+REV-0053,66,观察补证据,马尔福,0x489632f7340f97bd117c0d3b1f230a8b6a314444,leader_candidate,70,0-50k,meme/community,unmapped_chinese_meme,source/deploy/pool/amplifier/breakout,补 Douyin/B站/微博首发、热榜和音频复用量
+REV-0054,66,观察补证据,ong咪,0x4106eeaa36217a412a0c136f62a9bac6a6664444,leader_candidate,70,0-50k,meme/community,unmapped_chinese_meme,source/deploy/pool/amplifier/breakout,补 Douyin/B站/微博首发、热榜和音频复用量
+REV-0073,66,观察补证据,Agentic Mode,0xb03745cbbe3af8eb0d29b9854f71cf78e5534444,leader_candidate,70,0-50k,category,ai_agent,source/deploy/pool/amplifier/breakout,补项目官网、模型/agent 发布页、GitHub/产品库收录时间
+REV-0020,65,观察补证据,安小将,0x44449ba264dffdcf903128c6800d9e4d3998adaf,leader_candidate,70,0-50k,meme/community,unmapped_chinese_meme,source/deploy/pool/amplifier/breakout,补 Douyin/B站/微博首发、热榜和音频复用量
+REV-0030,65,观察补证据,金铲铲贵族,0x444497c85e6f7f7aa2d098c964da79e21dcfecab,leader_candidate,70,0-50k,meme/community,unmapped_chinese_meme,source/deploy/pool/amplifier/breakout,补 Douyin/B站/微博首发、热榜和音频复用量
+REV-0043,62,观察补证据,愚人小何,0x350b17da692d5ecd49bb751deaf5baf0ad604444,leader_candidate,70,0-50k,category,ai_agent,source/deploy/pool/amplifier/breakout,补项目官网、模型/agent 发布页、GitHub/产品库收录时间
+REV-0066,60,观察补证据,FFAI,0xea40fb19cccb852e2e9095904647773fa4614444,needs_human_check,55,0-50k,category,ai_agent,source/deploy/pool/amplifier/breakout,补项目官网、模型/agent 发布页、GitHub/产品库收录时间
+REV-0039,57,观察补证据,唐子兵法,0x93e4452af265d1dd2c3ed37e4eea7f996c744444,needs_human_check,55,0-50k,meme/community,unmapped_chinese_meme,source/deploy/pool/amplifier/breakout,补 Douyin/B站/微博首发、热榜和音频复用量
+REV-0060,57,观察补证据,AGENT,0x8004fc7b58399586ca6793ba6629849a78c96af2,needs_human_check,55,0-50k,category,ai_agent,source/deploy/pool/amplifier/breakout,补项目官网、模型/agent 发布页、GitHub/产品库收录时间
+REV-0065,50,观察补证据,金狗,0x1f7d530e1c985881308b6aa5c7c41978a0834444,needs_human_check,55,0-50k,meme,pure_meme,source/deploy/pool/amplifier/breakout,补 Douyin/B站/微博首发、热榜和音频复用量
+REV-0080,50,观察补证据,狐狸,0x52b73fd8cc9b2743a10e9f5e278c46cbe3484444,likely_copycat_or_noise,40,0-50k,meme/community,unmapped_chinese_meme,source/deploy/pool/amplifier/breakout,补 Douyin/B站/微博首发、热榜和音频复用量
+REV-0068,42,观察补证据,YI PEPE,0x615e3bf691178705ff1f9c3822b802aa45c04444,likely_copycat_or_noise,40,0-50k,meme,pure_meme,source/deploy/pool/amplifier/breakout,补 Douyin/B站/微博首发、热榜和音频复用量
+REV-0027,38,观察补证据,ONOP,0xec77f3bfe27f9ccac5a1ae502846b684ff4f4444,needs_human_check,55,0-50k,unknown,unknown,source/deploy/pool/amplifier/breakout,用 token 名称、部署时间和早期传播账号做源头检索
+REV-0032,38,观察补证据,KANDURA,0xe0769afa470e416f58c7792870c7e3b01b374444,needs_human_check,55,0-50k,unknown,unknown,source/deploy/pool/amplifier/breakout,用 token 名称、部署时间和早期传播账号做源头检索
+REV-0037,38,观察补证据,freedom of money,0xdfeff045b40a08c50b4d99b2739735706bd84444,needs_human_check,55,0-50k,unknown,unknown,source/deploy/pool/amplifier/breakout,用 token 名称、部署时间和早期传播账号做源头检索
+REV-0040,38,观察补证据,Dinance,0xa8913d9b17389cbb67955e5b6d6dc4930cfb4444,needs_human_check,55,0-50k,unknown,unknown,source/deploy/pool/amplifier/breakout,用 token 名称、部署时间和早期传播账号做源头检索
+REV-0045,38,观察补证据,ClawHouse,0x77e41a64b056b2de34cddeb087a4162145c74444,needs_human_check,55,0-50k,unknown,unknown,source/deploy/pool/amplifier/breakout,用 token 名称、部署时间和早期传播账号做源头检索
+REV-0050,38,观察补证据,NICE,0x1ed252c4374d2fcfcec98831bc09533c18de4444,needs_human_check,55,0-50k,unknown,unknown,source/deploy/pool/amplifier/breakout,用 token 名称、部署时间和早期传播账号做源头检索
+REV-0025,35,观察补证据,chovy,0xa5cad5e0352cc658d730356b684f519d635e4444,needs_human_check,55,0-50k,unknown,unknown,source/deploy/pool/amplifier/breakout,用 token 名称、部署时间和早期传播账号做源头检索
+REV-0035,35,观察补证据,ASTEROID,0x0234849d5e5b2e630b19e2e1c96b78058c274444,needs_human_check,55,0-50k,unknown,unknown,source/deploy/pool/amplifier/breakout,用 token 名称、部署时间和早期传播账号做源头检索
+REV-0044,35,观察补证据,SPCX,0x6f55eebc1a7871bac89fd203a206c2b0f6634444,needs_human_check,55,0-50k,unknown,unknown,source/deploy/pool/amplifier/breakout,用 token 名称、部署时间和早期传播账号做源头检索
+REV-0031,34,观察补证据,wood,0xe2b296db9c0c0854ed69f47eff434b54a7454444,needs_human_check,55,0-50k,unknown,unknown,source/deploy/pool/amplifier/breakout,用 token 名称、部署时间和早期传播账号做源头检索
+REV-0077,31,观察补证据,YI,0xb64157874c2648101733e335e9d1af85073f4444,likely_copycat_or_noise,40,0-50k,unknown,unknown,source/deploy/pool/amplifier/breakout,用 token 名称、部署时间和早期传播账号做源头检索
+REV-0078,31,观察补证据,hey stock,0xa3b2e6fe983ac7193f2e098ad6f7c195a3824444,likely_copycat_or_noise,40,0-50k,unknown,unknown,source/deploy/pool/amplifier/breakout,用 token 名称、部署时间和早期传播账号做源头检索
+REV-0046,27,观察补证据,Claymation,0x55a343ee1ce56f089703bf99900a5f69f36e4444,likely_copycat_or_noise,40,0-50k,unknown,unknown,source/deploy/pool/amplifier/breakout,用 token 名称、部署时间和早期传播账号做源头检索
+REV-0048,27,观察补证据,7,0xc3328bdd2d71fac87df2599cfed8e85931314444,likely_copycat_or_noise,40,0-50k,unknown,unknown,source/deploy/pool/amplifier/breakout,用 token 名称、部署时间和早期传播账号做源头检索
+REV-0033,26,观察补证据,Martian,0x5ea9176e9196c8968f9cc440cd148bcf07e74444,likely_copycat_or_noise,40,0-50k,unknown,unknown,source/deploy/pool/amplifier/breakout,用 token 名称、部署时间和早期传播账号做源头检索
+REV-0079,19,观察补证据,FREEDOM,0x72f033e62a316c2f545956311d0ec6c8f00d4444,likely_copycat_or_noise,25,0-50k,unknown,unknown,source/deploy/pool/amplifier/breakout,用 token 名称、部署时间和早期传播账号做源头检索

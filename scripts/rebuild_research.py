@@ -204,6 +204,164 @@ def build_alert_candidates(backlog: list[dict[str, Any]], platforms: list[dict[s
     return sorted(alerts, key=lambda r: int(to_float(r.get("score"))), reverse=True)
 
 
+def classify_leader(row: dict[str, str]) -> tuple[str, int]:
+    bucket = row.get("first_buy_bucket", "")
+    liq = to_float(row.get("first_buy_approx_liquidity_usd_after"))
+    priority = to_float(row.get("research_priority"))
+    tag = row.get("narrative_tag", "")
+    score = 0
+    if bucket == "0-50k":
+        score += 25
+    elif bucket in {"50k-100k", "100k-200k"}:
+        score += 12
+    if 1_000 <= liq <= 30_000:
+        score += 15
+    if priority >= 100:
+        score += 15
+    if tag not in {"unknown", "pure_meme"}:
+        score += 15
+    if row.get("leader_or_copycat") == "leader":
+        score += 20
+    if score >= 70:
+        label = "leader_candidate"
+    elif score >= 45:
+        label = "needs_human_check"
+    else:
+        label = "likely_copycat_or_noise"
+    return label, min(score, 100)
+
+
+def build_radar_model(candidates: list[dict[str, str]], platforms: list[dict[str, str]]) -> list[dict[str, Any]]:
+    rows: list[dict[str, Any]] = [
+        {
+            "module_id": "RADAR_SOURCE_DISCOVERY",
+            "module_name": "源头发现",
+            "trigger": "公司/创始人/项目/KOL/中文热梗/发币平台出现新叙事",
+            "inputs": "X/Twitter, official sites, GitHub, product pages, Douyin/Bilibili/微博, launch platforms",
+            "outputs": "source_event_id, source_time_utc, source_url, source_grade, source_entity",
+            "score_fields": "source_quality_score,narrative_novelty_score",
+            "human_gate": "必须复核原始链接或截图；无源头的名人名 token 降权",
+            "automation_status": "radar_only",
+        },
+        {
+            "module_id": "RADAR_FIRST_TOKEN_BATCH",
+            "module_name": "第一批 token 捕捉",
+            "trigger": "源头出现后监控 Four.meme/Pancake/launchpad 新 token",
+            "inputs": "token deploy, pool creation, first swaps, token name/symbol similarity",
+            "outputs": "token_address, deploy_time_utc, pool_time_utc, first_trade_time_utc, narrative_match",
+            "score_fields": "time_advantage_score,source_match_score",
+            "human_gate": "同名不等于强相关；需要看部署时间和源头语义是否匹配",
+            "automation_status": "radar_only",
+        },
+        {
+            "module_id": "RADAR_MARKET_WINDOW",
+            "module_name": "FDV/流动性/成交窗口",
+            "trigger": "首池形成和前几分钟成交出现",
+            "inputs": "FDV, pool BNB/USD liquidity, buy/sell count, volume, unique buyers",
+            "outputs": "fdv_bucket, liquidity_bucket, trade_window, onchain_quality_score",
+            "score_fields": "onchain_quality_score,liquidity_execution_score",
+            "human_gate": "薄池、异常税、疑似貔貅、假流动性直接跳过",
+            "automation_status": "manual_confirm_only",
+        },
+        {
+            "module_id": "RADAR_LEADER_COPYCAT",
+            "module_name": "leader/copycat 判断",
+            "trigger": "同一叙事短时间出现多个 token",
+            "inputs": "deploy order, first liquidity, first volume, holder growth, source semantic fit",
+            "outputs": "leader_score, leader_or_copycat, competing_tokens",
+            "score_fields": "leader_score,risk_penalty",
+            "human_gate": "只把 leader_candidate 推人工确认；copycat 默认观察",
+            "automation_status": "manual_confirm_only",
+        },
+        {
+            "module_id": "RADAR_HUMAN_CONFIRM",
+            "module_name": "人工确认推送",
+            "trigger": "总分达到提醒阈值",
+            "inputs": "source evidence + onchain window + leader score + risk flags",
+            "outputs": "email/telegram alert, review checklist, postmortem id",
+            "score_fields": "total_radar_score",
+            "human_gate": "样本库足够大之前，不自动买入",
+            "automation_status": "alert_only",
+        },
+    ]
+    rows.extend(
+        {
+            "module_id": f"PLATFORM_{platform.get('platform_id')}",
+            "module_name": platform.get("platform_name", ""),
+            "trigger": platform.get("what_to_monitor", ""),
+            "inputs": "new launches, pool creation, creator/deployer, liquidity, first buyers",
+            "outputs": "platform_event_id, platform_time_utc, candidate_token_batch",
+            "score_fields": "platform_priority,launch_quality_score",
+            "human_gate": platform.get("known_risks", ""),
+            "automation_status": "platform_watch",
+        }
+        for platform in platforms
+    )
+    return rows
+
+
+def build_time_edges(candidates: list[dict[str, str]]) -> list[dict[str, Any]]:
+    rows: list[dict[str, Any]] = []
+    for row in candidates:
+        token = row.get("token")
+        token_label = row.get("token_label")
+        first_buy = row.get("first_buy_time_utc")
+        first_exit_window = row.get("first_exit_window", "")
+        holding_window = row.get("holding_window", "")
+        leader_label, leader_score = classify_leader(row)
+        rows.append(
+            {
+                "token_label": token_label,
+                "token_address": token,
+                "source_time_utc": row.get("earliest_source_time_utc", ""),
+                "token_deploy_time_utc": "",
+                "pool_formed_time_utc": "",
+                "first_trade_time_utc": "",
+                "trader_first_buy_time_utc": first_buy,
+                "first_amplifier_time_utc": "",
+                "price_breakout_time_utc": "",
+                "source_to_deploy_min": "",
+                "deploy_to_pool_min": "",
+                "pool_to_trader_buy_min": "",
+                "trader_buy_to_amplifier_min": "",
+                "amplifier_to_breakout_min": "",
+                "first_exit_window": first_exit_window,
+                "holding_window": holding_window,
+                "leader_or_copycat": leader_label,
+                "leader_score": leader_score,
+                "status": "needs_source_and_platform_timestamps",
+            }
+        )
+    return rows
+
+
+def build_human_review_queue(backlog: list[dict[str, Any]], candidates: list[dict[str, str]]) -> list[dict[str, Any]]:
+    by_token = {row.get("token"): row for row in candidates}
+    rows: list[dict[str, Any]] = []
+    for item in backlog[:80]:
+        candidate = by_token.get(item.get("token_address"), {})
+        leader_label, leader_score = classify_leader(candidate)
+        total = int(to_float(item.get("priority_score"))) + int(leader_score * 0.25)
+        action = "人工确认" if total >= 75 else "观察补证据"
+        rows.append(
+            {
+                "review_id": f"REV-{len(rows)+1:04d}",
+                "total_radar_score": total,
+                "action": action,
+                "token_label": item.get("token_label", ""),
+                "token_address": item.get("token_address", ""),
+                "leader_or_copycat": leader_label,
+                "leader_score": leader_score,
+                "fdv_bucket": item.get("first_buy_bucket", ""),
+                "source_type": item.get("source_type_guess", ""),
+                "narrative_tag": item.get("narrative_tag", ""),
+                "time_edge_missing": "source/deploy/pool/amplifier/breakout",
+                "next_human_check": item.get("next_research_step", ""),
+            }
+        )
+    return sorted(rows, key=lambda r: int(to_float(r.get("total_radar_score"))), reverse=True)
+
+
 def build_email_preview(alerts: list[dict[str, Any]]) -> str:
     lines = [
         "# BSC Four.meme Source Alerts",
@@ -236,6 +394,9 @@ def main() -> None:
     platforms = read_csv(DATA / "launch_platforms.csv")
     backlog = build_source_backlog(candidates)
     alerts = build_alert_candidates(backlog, platforms, args.min_alert_score)
+    radar_model = build_radar_model(candidates, platforms)
+    time_edges = build_time_edges(candidates)
+    human_review = build_human_review_queue(backlog, candidates)
 
     write_csv(
         DATA / "source_research_backlog.csv",
@@ -263,6 +424,54 @@ def main() -> None:
         alerts,
         ["alert_id", "score", "action", "token_label", "token_address", "source_type", "narrative_tag", "first_buy_time_utc", "reason"],
     )
+    write_csv(
+        DATA / "radar_model.csv",
+        radar_model,
+        ["module_id", "module_name", "trigger", "inputs", "outputs", "score_fields", "human_gate", "automation_status"],
+    )
+    write_csv(
+        DATA / "radar_time_edges.csv",
+        time_edges,
+        [
+            "token_label",
+            "token_address",
+            "source_time_utc",
+            "token_deploy_time_utc",
+            "pool_formed_time_utc",
+            "first_trade_time_utc",
+            "trader_first_buy_time_utc",
+            "first_amplifier_time_utc",
+            "price_breakout_time_utc",
+            "source_to_deploy_min",
+            "deploy_to_pool_min",
+            "pool_to_trader_buy_min",
+            "trader_buy_to_amplifier_min",
+            "amplifier_to_breakout_min",
+            "first_exit_window",
+            "holding_window",
+            "leader_or_copycat",
+            "leader_score",
+            "status",
+        ],
+    )
+    write_csv(
+        DATA / "human_review_queue.csv",
+        human_review,
+        [
+            "review_id",
+            "total_radar_score",
+            "action",
+            "token_label",
+            "token_address",
+            "leader_or_copycat",
+            "leader_score",
+            "fdv_bucket",
+            "source_type",
+            "narrative_tag",
+            "time_edge_missing",
+            "next_human_check",
+        ],
+    )
     write_json(
         DATA / "research_status.json",
         {
@@ -271,6 +480,8 @@ def main() -> None:
             "backlog_count": len(backlog),
             "platform_count": len(platforms),
             "alert_candidate_count": len(alerts),
+            "radar_module_count": len(radar_model),
+            "human_review_count": len(human_review),
             "min_alert_score": args.min_alert_score,
             "email_status": "dry_run_preview_only",
             "next_required_inputs": [
@@ -289,4 +500,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

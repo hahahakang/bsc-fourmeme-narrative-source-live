@@ -1,0 +1,174 @@
+token_label,token_address,source_time_utc,token_deploy_time_utc,pool_formed_time_utc,first_trade_time_utc,trader_first_buy_time_utc,first_amplifier_time_utc,price_breakout_time_utc,source_to_deploy_min,deploy_to_pool_min,pool_to_trader_buy_min,trader_buy_to_amplifier_min,amplifier_to_breakout_min,first_exit_window,holding_window,leader_or_copycat,leader_score,status
+CZ 🔶 BNB,0x6114ea6cc28ae5cd5e4a404e562ce4747de94444,,,,,2026-04-03 07:11:14,,,,,,,,0-5m,3d-7d,leader_candidate,70,needs_source_and_platform_timestamps
+CS,0xca7ab98f4c43e5e92a8d2b8ef9b35c76a52a4444,,,,,2026-04-08 06:31:53,,,,,,,,0-5m,1d-3d,leader_candidate,70,needs_source_and_platform_timestamps
+Dinance,0x42a3404651eb9ce4fce649d4999329481eea4444,,,,,2026-05-07 08:02:44,,,,,,,,0-5m,5-30m,leader_candidate,70,needs_source_and_platform_timestamps
+FFAI,0x0e21e9555d415a551fb12aecb356160221294444,,,,,2026-03-22 06:14:58,,,,,,,,0-5m,6h-24h,leader_candidate,70,needs_source_and_platform_timestamps
+流金谷恩仇录,0x900ae9e048d9b0bdab2d4cf947c7c246a0824444,,,,,2026-03-18 00:50:44,,,,,,,,0-5m,1h-6h,leader_candidate,70,needs_source_and_platform_timestamps
+传统金融,0x97dda9801d38b1399200448b70442a4459a94444,,,,,2026-06-01 03:27:15,,,,,,,,5-30m,5-30m,needs_human_check,55,needs_source_and_platform_timestamps
+比比拉布,0xd730680f1dac564d4b289eb0dbbef7b23fda4444,,,,,2026-02-05 04:33:43,,,,,,,,1h-6h,7d+,leader_candidate,70,needs_source_and_platform_timestamps
+BNB,0x9f391279cc2ab9e22768599fc7d0252644804444,,,,,2026-03-31 09:44:36,,,,,,,,0-5m,1h-6h,leader_candidate,70,needs_source_and_platform_timestamps
+CZ,0x2b057db87cac1e419f30358b0097d1280ba84444,,,,,2026-02-11 06:57:25,,,,,,,,5-30m,6h-24h,leader_candidate,70,needs_source_and_platform_timestamps
+AI gent,0x0566969ff0a59472a6693c758cf01cb98c684444,,,,,2026-03-03 17:09:16,,,,,,,,0-5m,1d-3d,leader_candidate,70,needs_source_and_platform_timestamps
+TUWB,0x27b8d57c9e412757af6d7efabcbb637224f14444,,,,,2026-05-06 07:02:22,,,,,,,,0-5m,1h-6h,leader_candidate,70,needs_source_and_platform_timestamps
+大象,0x2824b90ccfbcae7e10e6e0d9aa69e8c226814444,,,,,2026-03-09 02:08:58,,,,,,,,0-5m,7d+,leader_candidate,70,needs_source_and_platform_timestamps
+月之暗面,0x444428e122c0fd4f7e642cf91d73dff53622366c,,,,,2026-04-27 03:13:36,,,,,,,,0-5m,30m-1h,leader_candidate,70,needs_source_and_platform_timestamps
+导师CZ,0xcbf231e7ba9ebd6b6ec6253fcbc2091fcf7b4444,,,,,2026-03-14 02:23:31,,,,,,,,0-5m,5-30m,leader_candidate,70,needs_source_and_platform_timestamps
+BNB,0x491479c940b62171d46da6c74d93a6c245564444,,,,,2026-05-03 13:37:26,,,,,,,,0-5m,0-5m,leader_candidate,70,needs_source_and_platform_timestamps
+AI何一,0x9d48014610228d0d0c9e6f83bf9b641711854444,,,,,2026-04-01 07:08:43,,,,,,,,0-5m,0-5m,leader_candidate,70,needs_source_and_platform_timestamps
+BAI,0xc31e3e49d47ee3ad35993c8f887d0942aa7d4444,,,,,2026-03-11 10:00:17,,,,,,,,0-5m,0-5m,leader_candidate,70,needs_source_and_platform_timestamps
+Meme candidates,0x7e4c5e2f76f74e95ff20959ee71433c3e6ec4444,,,,,2026-03-30 10:33:45,,,,,,,,0-5m,1h-6h,leader_candidate,70,needs_source_and_platform_timestamps
+神仝,0x478aebe7758c29e29ca71147a57e1063fc764444,,,,,2026-05-03 02:59:44,,,,,,,,3d-7d,7d+,leader_candidate,70,needs_source_and_platform_timestamps
+安小将,0x44449ba264dffdcf903128c6800d9e4d3998adaf,,,,,2026-04-15 09:14:08,,,,,,,,0-5m,7d+,leader_candidate,70,needs_source_and_platform_timestamps
+冲鸭,0x7528f0abcb9e4fd65859c92255aa889d02094444,,,,,2026-05-01 09:58:44,,,,,,,,0-5m,3d-7d,leader_candidate,70,needs_source_and_platform_timestamps
+马维斯,0x13762a21d45d102078269b0b0ac9a954104e4444,,,,,2026-05-17 05:15:55,,,,,,,,3d-7d,3d-7d,leader_candidate,70,needs_source_and_platform_timestamps
+牛回！,0x5177b93950833dd74569091fad3bfb3a1ab04444,,,,,2026-05-11 07:28:47,,,,,,,,0-5m,1h-6h,leader_candidate,70,needs_source_and_platform_timestamps
+BAP,0x66f10363aa46e27215b7669898efc67a462f4444,,,,,2026-03-23 08:41:40,,,,,,,,0-5m,1d-3d,leader_candidate,70,needs_source_and_platform_timestamps
+chovy,0xa5cad5e0352cc658d730356b684f519d635e4444,,,,,2026-05-04 01:54:40,,,,,,,,1h-6h,1d-3d,needs_human_check,55,needs_source_and_platform_timestamps
+QClaw,0x9eae0c56c5eb40d5b47c6c197573bc39adad4444,,,,,2026-03-08 14:26:30,,,,,,,,0-5m,1d-3d,leader_candidate,70,needs_source_and_platform_timestamps
+ONOP,0xec77f3bfe27f9ccac5a1ae502846b684ff4f4444,,,,,2026-04-07 08:07:50,,,,,,,,0-5m,6h-24h,needs_human_check,55,needs_source_and_platform_timestamps
+马上有钱,0x49769e06a8fdc9df45de40927bb89fae6ccd4444,,,,,2026-02-11 06:46:07,,,,,,,,5-30m,6h-24h,leader_candidate,70,needs_source_and_platform_timestamps
+幣安人生,0x6ce931ccb9484c00e7cbc7df0cce7c3d103b4444,,,,,2026-04-03 03:49:41,,,,,,,,0-5m,1h-6h,leader_candidate,70,needs_source_and_platform_timestamps
+金铲铲贵族,0x444497c85e6f7f7aa2d098c964da79e21dcfecab,,,,,2026-04-16 09:39:05,,,,,,,,0-5m,5-30m,leader_candidate,70,needs_source_and_platform_timestamps
+wood,0xe2b296db9c0c0854ed69f47eff434b54a7454444,,,,,2026-05-07 15:33:12,,,,,,,,0-5m,1h-6h,needs_human_check,55,needs_source_and_platform_timestamps
+KANDURA,0xe0769afa470e416f58c7792870c7e3b01b374444,,,,,2026-04-13 14:08:04,,,,,,,,0-5m,5-30m,needs_human_check,55,needs_source_and_platform_timestamps
+Martian,0x5ea9176e9196c8968f9cc440cd148bcf07e74444,,,,,2026-04-19 11:00:23,,,,,,,,0-5m,7d+,likely_copycat_or_noise,40,needs_source_and_platform_timestamps
+币圈一姐,0xada9108d2148604119b7861df7af0c3c83364444,,,,,2026-05-16 08:03:19,,,,,,,,0-5m,6h-24h,leader_candidate,70,needs_source_and_platform_timestamps
+ASTEROID,0x0234849d5e5b2e630b19e2e1c96b78058c274444,,,,,2026-04-17 03:52:02,,,,,,,,5-30m,1h-6h,needs_human_check,55,needs_source_and_platform_timestamps
+谎话精,0x1eede6b205290d58a05722dccf31f3227f794444,,,,,2026-04-09 16:49:45,,,,,,,,0-5m,30m-1h,leader_candidate,70,needs_source_and_platform_timestamps
+freedom of money,0xdfeff045b40a08c50b4d99b2739735706bd84444,,,,,2026-02-28 03:47:37,,,,,,,,0-5m,7d+,needs_human_check,55,needs_source_and_platform_timestamps
+慈善家,0xc75110b5959b61d7f4de0d425ce2d8377b924444,,,,,2026-03-13 07:00:29,,,,,,,,0-5m,1d-3d,leader_candidate,70,needs_source_and_platform_timestamps
+唐子兵法,0x93e4452af265d1dd2c3ed37e4eea7f996c744444,,,,,2026-03-17 02:20:12,,,,,,,,5-30m,7d+,needs_human_check,55,needs_source_and_platform_timestamps
+Dinance,0xa8913d9b17389cbb67955e5b6d6dc4930cfb4444,,,,,2026-05-07 08:19:02,,,,,,,,0-5m,0-5m,needs_human_check,55,needs_source_and_platform_timestamps
+致加密社区的一封公开信,0x614d6d3c765d66cb929469443eb626556e734444,,,,,2026-01-30 04:17:05,,,,,,,,0-5m,1h-6h,leader_candidate,70,needs_source_and_platform_timestamps
+华山论剑,0xeee5c3876bb10a2d5752b28c10c0d307edfd4444,,,,,2026-03-08 05:02:50,,,,,,,,0-5m,0-5m,leader_candidate,70,needs_source_and_platform_timestamps
+愚人小何,0x350b17da692d5ecd49bb751deaf5baf0ad604444,,,,,2026-04-01 07:21:05,,,,,,,,5-30m,6h-24h,leader_candidate,70,needs_source_and_platform_timestamps
+SPCX,0x6f55eebc1a7871bac89fd203a206c2b0f6634444,,,,,2026-04-15 11:09:56,,,,,,,,7d+,7d+,needs_human_check,55,needs_source_and_platform_timestamps
+ClawHouse,0x77e41a64b056b2de34cddeb087a4162145c74444,,,,,2026-03-09 04:34:19,,,,,,,,0-5m,1d-3d,needs_human_check,55,needs_source_and_platform_timestamps
+Claymation,0x55a343ee1ce56f089703bf99900a5f69f36e4444,,,,,2026-03-21 00:56:34,,,,,,,,1d-3d,1d-3d,likely_copycat_or_noise,40,needs_source_and_platform_timestamps
+东͏莞͏崇͏英͏学校,0x2e2c15a5b16012d89e3cdcaa5f4e6c8d8f2a4444,,,,,2026-03-19 04:08:49,,,,,,,,0-5m,1d-3d,leader_candidate,70,needs_source_and_platform_timestamps
+7,0xc3328bdd2d71fac87df2599cfed8e85931314444,,,,,2026-04-10 04:27:18,,,,,,,,7d+,7d+,likely_copycat_or_noise,40,needs_source_and_platform_timestamps
+Binance AI Pro,0x66e70721537e1cf2bcb290cb840c499dd62d4444,,,,,2026-03-25 07:45:53,,,,,,,,0-5m,7d+,needs_human_check,55,needs_source_and_platform_timestamps
+NICE,0x1ed252c4374d2fcfcec98831bc09533c18de4444,,,,,2026-04-14 03:00:04,,,,,,,,0-5m,0-5m,needs_human_check,55,needs_source_and_platform_timestamps
+COCO,0xb2df7b3df369be8d4d6b5a86425d72b90e3e4444,,,,,2026-03-14 09:47:54,,,,,,,,0-5m,1d-3d,leader_candidate,70,needs_source_and_platform_timestamps
+热点雷达,0x697077192abd1d789c52b6425b3333bb216a4444,,,,,2026-02-12 08:11:13,,,,,,,,0-5m,0-5m,leader_candidate,70,needs_source_and_platform_timestamps
+马尔福,0x489632f7340f97bd117c0d3b1f230a8b6a314444,,,,,2026-02-04 09:58:18,,,,,,,,30m-1h,3d-7d,leader_candidate,70,needs_source_and_platform_timestamps
+ong咪,0x4106eeaa36217a412a0c136f62a9bac6a6664444,,,,,2026-01-27 08:44:22,,,,,,,,1h-6h,1h-6h,leader_candidate,70,needs_source_and_platform_timestamps
+尖叫鸡,0x1d8fbc1ff8755d5df67357d487a2e0f035ec4444,,,,,2026-01-30 10:35:45,,,,,,,,0-5m,7d+,leader_candidate,70,needs_source_and_platform_timestamps
+一纸人生，半生自由,0xb9c78706ce79525058e43f76fcd1ac5cef234444,,,,,2026-04-10 04:10:16,,,,,,,,0-5m,1h-6h,leader_candidate,70,needs_source_and_platform_timestamps
+BIBIClaw,0xa818853a06040a6ba9fb98ab34bbf56fe8444444,,,,,2026-03-16 06:27:24,,,,,,,,5-30m,7d+,leader_candidate,70,needs_source_and_platform_timestamps
+MARTIAN,0x4444e2614121dc92c3963c0dea45c1024a8e4a3d,,,,,2026-04-19 11:00:50,,,,,,,,5-30m,1h-6h,leader_candidate,70,needs_source_and_platform_timestamps
+红包女侠,0x36b012c02979a8da06f942889c651ef8b8564444,,,,,2026-02-14 08:25:09,,,,,,,,0-5m,5-30m,leader_candidate,70,needs_source_and_platform_timestamps
+AGENT,0x8004fc7b58399586ca6793ba6629849a78c96af2,,,,,2026-03-01 16:30:37,,,,,,,,6h-24h,1d-3d,needs_human_check,55,needs_source_and_platform_timestamps
+币安AI,0x4c938dc2aac0136f0adad3307e929ff94d564444,,,,,2026-03-15 12:36:19,,,,,,,,0-5m,6h-24h,leader_candidate,70,needs_source_and_platform_timestamps
+7,0x32b1fa9d307a19c119ab20219ba409f927334444,,,,,2026-03-16 12:48:46,,,,,,,,0-5m,0-5m,leader_candidate,70,needs_source_and_platform_timestamps
+CZ,0xfecb0d1585223d3a7812913eb882862d47b44444,,,,,2026-03-18 04:33:31,,,,,,,,6h-24h,6h-24h,needs_human_check,55,needs_source_and_platform_timestamps
+币安AI短剧比赛,0x8152871b4d3d3399d9c00800ea238ecda1264444,,,,,2026-02-09 09:27:43,,,,,,,,0-5m,3d-7d,leader_candidate,70,needs_source_and_platform_timestamps
+金狗,0x1f7d530e1c985881308b6aa5c7c41978a0834444,,,,,2026-04-17 14:25:00,,,,,,,,0-5m,0-5m,needs_human_check,55,needs_source_and_platform_timestamps
+FFAI,0xea40fb19cccb852e2e9095904647773fa4614444,,,,,2026-03-22 06:15:18,,,,,,,,0-5m,6h-24h,needs_human_check,55,needs_source_and_platform_timestamps
+FOURAGENT,0x44448544e30f01e2309e96ceb31a73146ccd995f,,,,,2026-03-04 06:44:42,,,,,,,,0-5m,3d-7d,leader_candidate,70,needs_source_and_platform_timestamps
+YI PEPE,0x615e3bf691178705ff1f9c3822b802aa45c04444,,,,,2026-03-05 03:10:38,,,,,,,,0-5m,30m-1h,likely_copycat_or_noise,40,needs_source_and_platform_timestamps
+SuperIntern,0x07375dd96aac45cb5e48c5b0cc3844a3067d4444,,,,,2026-03-05 02:11:45,,,,,,,,5-30m,3d-7d,leader_candidate,70,needs_source_and_platform_timestamps
+歪鼻巴卜,0xa408dca4afcee949abf0643671cd8e1359674444,,,,,2026-03-31 03:23:30,,,,,,,,0-5m,1d-3d,leader_candidate,70,needs_source_and_platform_timestamps
+卡卡,0x94d76e03c312cfd895160bfb07e548914f154444,,,,,2026-03-30 02:14:31,,,,,,,,0-5m,5-30m,leader_candidate,70,needs_source_and_platform_timestamps
+贾维斯,0x02a2351059234f2783b800358eff8c2cc53b4444,,,,,2026-03-15 05:09:39,,,,,,,,0-5m,1d-3d,leader_candidate,70,needs_source_and_platform_timestamps
+Agentic Mode,0xb03745cbbe3af8eb0d29b9854f71cf78e5534444,,,,,2026-03-01 07:46:06,,,,,,,,1h-6h,1h-6h,leader_candidate,70,needs_source_and_platform_timestamps
+我以后不赌了,0x3ef726885e017baa8c42ef6f6f17915418084444,,,,,2026-05-27 04:51:47,,,,,,,,0-5m,30m-1h,leader_candidate,70,needs_source_and_platform_timestamps
+Kahoot,0x76f2e86bff12fbb3e5c778a7f00e5d13f2894444,,,,,2026-03-25 12:44:46,,,,,,,,0-5m,5-30m,leader_candidate,70,needs_source_and_platform_timestamps
+肉包,0x007be65c48bc24b8fdb85fddfc65e3884bba4444,,,,,2026-01-28 04:29:30,,,,,,,,0-5m,1h-6h,leader_candidate,70,needs_source_and_platform_timestamps
+YI,0xb64157874c2648101733e335e9d1af85073f4444,,,,,2026-05-27 10:03:57,,,,,,,,0-5m,6h-24h,likely_copycat_or_noise,40,needs_source_and_platform_timestamps
+hey stock,0xa3b2e6fe983ac7193f2e098ad6f7c195a3824444,,,,,2026-05-30 10:12:40,,,,,,,,0-5m,1d-3d,likely_copycat_or_noise,40,needs_source_and_platform_timestamps
+FREEDOM,0x72f033e62a316c2f545956311d0ec6c8f00d4444,,,,,2026-03-27 03:20:29,,,,,,,,5-30m,6h-24h,likely_copycat_or_noise,25,needs_source_and_platform_timestamps
+狐狸,0x52b73fd8cc9b2743a10e9f5e278c46cbe3484444,,,,,2026-03-11 08:53:53,,,,,,,,1d-3d,7d+,likely_copycat_or_noise,40,needs_source_and_platform_timestamps
+WSJ,0x1845a4e394f8ff588838afc019e4dbe9ccdc4444,,,,,2026-03-11 12:01:02,,,,,,,,0-5m,7d+,likely_copycat_or_noise,40,needs_source_and_platform_timestamps
+光源,0xc012b418b4c65f0f9573e33ab0c4656396784444,,,,,2026-05-28 05:25:12,,,,,,,,0-5m,1h-6h,needs_human_check,55,needs_source_and_platform_timestamps
+banify,0xab8d02b2adc0517721031374de15336be0ba4444,,,,,2026-03-24 05:45:39,,,,,,,,0-5m,6h-24h,needs_human_check,55,needs_source_and_platform_timestamps
+我的刀盾,0x640c04ca09c5c5140e62fef42c59e3afdbbd4444,,,,,2026-02-05 04:33:48,,,,,,,,1h-6h,7d+,likely_copycat_or_noise,27,needs_source_and_platform_timestamps
+背手负鼠,0x5f6fd60ad6cd8751b4c521bc00fa02abfeca4444,,,,,2026-05-19 11:55:42,,,,,,,,5-30m,3d-7d,likely_copycat_or_noise,27,needs_source_and_platform_timestamps
+龙虾,0xeccbb861c0dda7efd964010085488b69317e4444,,,,,2026-02-27 09:21:46,,,,,,,,0-5m,7d+,likely_copycat_or_noise,15,needs_source_and_platform_timestamps
+世界和平,0x4444def5cf226bf50aa4b45e5748b676945bc509,,,,,2026-02-23 05:42:05,,,,,,,,unknown,7d+,likely_copycat_or_noise,27,needs_source_and_platform_timestamps
+金钱自由,0x4a50eeef18a350484d8ce7474f43571ccd934444,,,,,2026-02-28 03:35:45,,,,,,,,0-5m,5-30m,likely_copycat_or_noise,27,needs_source_and_platform_timestamps
+六大门派围攻光明顶,0x7a40c80ed70e2d801b9423ac5bb599e63a044444,,,,,2026-02-09 08:48:36,,,,,,,,0-5m,3d-7d,likely_copycat_or_noise,27,needs_source_and_platform_timestamps
+ClawBot,0x412530e49ee1b1f64124064b2e732e92c1314444,,,,,2026-03-22 01:25:31,,,,,,,,0-5m,5-30m,needs_human_check,55,needs_source_and_platform_timestamps
+Aoi,0x2aa1ea33f9741d83703f3b615be7455fdbd34444,,,,,2026-03-18 07:35:13,,,,,,,,0-5m,0-5m,needs_human_check,55,needs_source_and_platform_timestamps
+Benji,0x15d29c42981e2319e01079c81b56603c5f334444,,,,,2026-02-11 09:18:58,,,,,,,,5-30m,5-30m,likely_copycat_or_noise,25,needs_source_and_platform_timestamps
+MCAA,0x4444eb49de7b33cca1906a4e38a37407eb152067,,,,,2026-04-23 02:24:13,,,,,,,,0-5m,0-5m,likely_copycat_or_noise,40,needs_source_and_platform_timestamps
+青蛙,0xb707fbba262be7282175e10b3b2ba261a90a4444,,,,,2026-03-14 03:07:29,,,,,,,,0-5m,3d-7d,needs_human_check,55,needs_source_and_platform_timestamps
+中͏国梦,0x1cbe4ae34cbd27b0c25d01d73f436ebb95e54444,,,,,2026-05-14 10:50:35,,,,,,,,0-5m,5-30m,needs_human_check,55,needs_source_and_platform_timestamps
+Eid Mubarak,0x52e3e4fab867abfd0efb5b93514ae43c82f520d5,,,,,2026-03-13 04:41:37,,,,,,,,7d+,7d+,likely_copycat_or_noise,25,needs_source_and_platform_timestamps
+赵氏孤儿,0xbcffccb4e1d2715118558a76faa94b93bbd84444,,,,,2026-02-18 12:09:33,,,,,,,,0-5m,30m-1h,likely_copycat_or_noise,40,needs_source_and_platform_timestamps
+MFGA,0xf8d5392e48369044b54e2483dcfed6e673fc4444,,,,,2026-04-19 14:56:12,,,,,,,,0-5m,5-30m,likely_copycat_or_noise,40,needs_source_and_platform_timestamps
+蚍蜉,0x31f650380d01873dbd82d8de3ad7502a57ac4444,,,,,2026-02-11 10:01:37,,,,,,,,0-5m,1h-6h,needs_human_check,55,needs_source_and_platform_timestamps
+CMO,0x2c94ed98ad5dd7b53daa05f812e8b4198cc64444,,,,,2026-03-08 14:01:24,,,,,,,,0-5m,5-30m,likely_copycat_or_noise,40,needs_source_and_platform_timestamps
+拉哪,0x44444d628a21d5c86d1da876c1e7813c096aa479,,,,,2026-04-16 10:02:35,,,,,,,,0-5m,1h-6h,needs_human_check,55,needs_source_and_platform_timestamps
+shitstock,0xba52b58135ca198ff329f7a943dcbb4193b54444,,,,,2026-05-31 03:23:43,,,,,,,,0-5m,6h-24h,likely_copycat_or_noise,40,needs_source_and_platform_timestamps
+红包外卖踏马来了,0x09bed2eb4e516fde1cb424f518355e78c1f44444,,,,,2026-02-14 08:44:25,,,,,,,,0-5m,0-5m,needs_human_check,55,needs_source_and_platform_timestamps
+ASTROID,0xac55484fb0aa9354c276b0285fc75d0b42ba4444,,,,,2026-04-17 07:00:54,,,,,,,,5-30m,1h-6h,needs_human_check,55,needs_source_and_platform_timestamps
+GMGN,0x0e3c424b0842707da55f2046a657827d3d894444,,,,,2026-03-29 04:18:57,,,,,,,,5-30m,6h-24h,needs_human_check,55,needs_source_and_platform_timestamps
+生化危机：币安绝境,0xbf1862b41f83a132af67813361b8cec895d34444,,,,,2026-04-01 12:01:10,,,,,,,,0-5m,5-30m,needs_human_check,55,needs_source_and_platform_timestamps
+狗娃,0x832127ecd7b4949e508ed6d31e95576c0e4e4444,,,,,2026-03-16 03:23:06,,,,,,,,0-5m,0-5m,likely_copycat_or_noise,25,needs_source_and_platform_timestamps
+Stocks,0xdbdab51c866d570bdd491388ec6c1c7895bc4444,,,,,2026-05-31 06:23:19,,,,,,,,1h-6h,6h-24h,needs_human_check,55,needs_source_and_platform_timestamps
+BinanceAI,0xcb20965ac329b0107d8f723f778bf0ca2c144444,,,,,2026-03-16 05:26:08,,,,,,,,0-5m,30m-1h,needs_human_check,55,needs_source_and_platform_timestamps
+YURI,0x6721898d98a3ac5bfe657bcb48525549943c4444,,,,,2026-02-15 07:10:18,,,,,,,,0-5m,5-30m,likely_copycat_or_noise,40,needs_source_and_platform_timestamps
+τ,0x44acfd9fbb4ca0a6a5c3089e17fdf475556c4444,,,,,2026-05-25 01:27:18,,,,,,,,5-30m,5-30m,needs_human_check,55,needs_source_and_platform_timestamps
+zBNB,0x56c17ff3e8c216a6bb6d42d1e0aa8565d0524444,,,,,2026-02-23 04:10:29,,,,,,,,0-5m,6h-24h,needs_human_check,55,needs_source_and_platform_timestamps
+BONKRot,0x44443664201f5de5be8c245bc5a4e0bd1c15b64d,,,,,2026-03-14 01:44:10,,,,,,,,5-30m,6h-24h,likely_copycat_or_noise,40,needs_source_and_platform_timestamps
+Moltcn,0x7da00f26fc6199fc2dabc32b12cfa44a80c14444,,,,,2026-03-10 03:23:49,,,,,,,,0-5m,0-5m,needs_human_check,55,needs_source_and_platform_timestamps
+G.O.A.T.,0x5a9387146a396bad736a482cb996998eb1204444,,,,,2026-03-03 03:21:47,,,,,,,,0-5m,6h-24h,likely_copycat_or_noise,40,needs_source_and_platform_timestamps
+1,0x30d1b2919cf2178d1a5d8c370a104e31e8ca4444,,,,,2026-03-22 14:48:35,,,,,,,,0-5m,0-5m,needs_human_check,55,needs_source_and_platform_timestamps
+SPAX,0x7d336a0465c75974c85b494463156364f0c14444,,,,,2026-04-10 11:57:08,,,,,,,,1h-6h,1d-3d,likely_copycat_or_noise,40,needs_source_and_platform_timestamps
+GORK,0x46c7b4b9b5bc0ea54035a96edeaa626f828f4444,,,,,2026-02-25 15:04:20,,,,,,,,5-30m,6h-24h,likely_copycat_or_noise,25,needs_source_and_platform_timestamps
+FIGHTLESS,0x732c87cbdc5ff927057cc9bef8cda9d7f29c4444,,,,,2026-03-11 13:28:57,,,,,,,,0-5m,0-5m,likely_copycat_or_noise,40,needs_source_and_platform_timestamps
+secret,0xa06ae9e2ebb465ba861d6c03be99957e3cb74444,,,,,2026-03-26 02:09:18,,,,,,,,6h-24h,1d-3d,likely_copycat_or_noise,40,needs_source_and_platform_timestamps
+元气AI,0xad144bf8edcf3712a86d3939d2dbeb531ebd4444,,,,,2026-01-30 11:04:22,,,,,,,,5-30m,7d+,needs_human_check,55,needs_source_and_platform_timestamps
+币安人生,0xd2e416782917ea7aff6e995489bd0dd5b2047f67,,,,,2026-04-16 14:26:00,,,,,,,,no-sell,5-30m,likely_copycat_or_noise,40,needs_source_and_platform_timestamps
+AI小镇,0xe83606959340915fbf88633c69d206fbf40fffff,,,,,2026-03-17 11:52:52,,,,,,,,no-sell,3d-7d,likely_copycat_or_noise,40,needs_source_and_platform_timestamps
+金钱自由基金会,0x5c3ca7f236a95f753da836d9dd9860fb2f21ffff,,,,,2026-04-03 03:58:08,,,,,,,,no-sell,1h-6h,likely_copycat_or_noise,40,needs_source_and_platform_timestamps
+币安聊天室,0x44448c8b1c21a438e149abbe838c790ba21819ca,,,,,2026-04-15 12:35:32,,,,,,,,5-30m,7d+,needs_human_check,55,needs_source_and_platform_timestamps
+Exchange the world,0xd45ff38d132114968091f154cdcc0dfea06b4444,,,,,2026-01-28 11:45:11,,,,,,,,1h-6h,7d+,likely_copycat_or_noise,0,needs_source_and_platform_timestamps
+小安助手,0x44448367f79bdf56b812a9d5e0eed19e9fea9b7a,,,,,2026-01-31 11:07:10,,,,,,,,7d+,7d+,likely_copycat_or_noise,27,needs_source_and_platform_timestamps
+我去不早说,0x4cbc8da8b95c305d9fbdc7cc198b6f67c7704444,,,,,2026-03-10 12:30:04,,,,,,,,0-5m,7d+,needs_human_check,55,needs_source_and_platform_timestamps
+歪比巴卜,0xabffd43c28bdaed633fcd7ad0982cd0bd6fb4444,,,,,2026-03-07 05:15:02,,,,,,,,7d+,7d+,needs_human_check,55,needs_source_and_platform_timestamps
+SPCX,0x4444b0822eb005746f7a1b68d7660b02addf8284,,,,,2026-04-22 10:40:51,,,,,,,,no-sell,0-5m,likely_copycat_or_noise,40,needs_source_and_platform_timestamps
+GC,0x4a7c9940fbe33749254a8e2db775363690ed4444,,,,,2026-03-23 03:37:54,,,,,,,,no-sell,3d-7d,likely_copycat_or_noise,25,needs_source_and_platform_timestamps
+龙头,0x63f9341c9d53b98f925790fd433350270dd14444,,,,,2026-03-30 13:57:14,,,,,,,,0-5m,1d-3d,needs_human_check,55,needs_source_and_platform_timestamps
+爱坤,0x4444d0579a0eafa455610693c6da8301a3eb4396,,,,,2026-05-02 12:25:03,,,,,,,,7d+,7d+,needs_human_check,55,needs_source_and_platform_timestamps
+背手负狗,0xb26de2b8f9b559b896c89e49a3f8649a0d2e4444,,,,,2026-05-26 07:55:06,,,,,,,,no-sell,30m-1h,needs_human_check,55,needs_source_and_platform_timestamps
+币间盗,0xf257dffcee335dc6b555ac5be2c45975df207777,,,,,2026-02-09 07:48:51,,,,,,,,0-5m,7d+,likely_copycat_or_noise,40,needs_source_and_platform_timestamps
+币安恋,0x6657adbcaa70f579a46a13dbab7961695e434444,,,,,2026-05-26 03:26:41,,,,,,,,0-5m,1h-6h,needs_human_check,55,needs_source_and_platform_timestamps
+AI小何,0x7edc00740cbc8a389a4683d448cd2dea8ed24444,,,,,2026-05-06 07:37:31,,,,,,,,no-sell,0-5m,likely_copycat_or_noise,40,needs_source_and_platform_timestamps
+FDOGE,0x5cf3404e89d7c55f7073878a847289a5cea9ffff,,,,,2026-04-14 07:05:41,,,,,,,,no-sell,6h-24h,likely_copycat_or_noise,25,needs_source_and_platform_timestamps
+CA Store,0x97dcd3597060e4526b1aec6fb3e261e21e807777,,,,,2026-03-10 05:05:02,,,,,,,,no-sell,5-30m,likely_copycat_or_noise,40,needs_source_and_platform_timestamps
+HODLAI,0x987e6269c6b7ea6898221882f11ea16f87b97777,,,,,2026-01-27 02:32:22,,,,,,,,no-sell,7d+,likely_copycat_or_noise,27,needs_source_and_platform_timestamps
+BiBi,0x4444790b84a9b48156cd64782fcab195b836002b,,,,,2026-04-19 16:28:11,,,,,,,,no-sell,5-30m,likely_copycat_or_noise,27,needs_source_and_platform_timestamps
+币安人声,0xc7f7d23b54e18b46f9957d4630896fb07b3a4444,,,,,2026-04-13 10:16:34,,,,,,,,7d+,7d+,likely_copycat_or_noise,27,needs_source_and_platform_timestamps
+币安人,0x7400bf6c09728d066e02749379bef1cb46d94444,,,,,2026-05-28 09:59:32,,,,,,,,no-sell,0-5m,likely_copycat_or_noise,27,needs_source_and_platform_timestamps
+agentic money,0xae71fd8bacc2f17c43a01c3f4aff6deebc194444,,,,,2026-05-03 15:28:01,,,,,,,,no-sell,0-5m,likely_copycat_or_noise,27,needs_source_and_platform_timestamps
+ForgAI,0x3e9fc4f2acf5d6f7815cb9f38b2c69576088ffff,,,,,2026-03-05 07:30:42,,,,,,,,no-sell,0-5m,likely_copycat_or_noise,15,needs_source_and_platform_timestamps
+币安 Ai Pro,0x61ef6983e3398968567efd51f7e480d323834444,,,,,2026-03-24 10:32:33,,,,,,,,0-5m,3d-7d,likely_copycat_or_noise,27,needs_source_and_platform_timestamps
+DOGSHIT,0xa3aef123864b1284105aab5bd8249639bf6c4444,,,,,2026-02-10 09:19:18,,,,,,,,0-5m,7d+,likely_copycat_or_noise,12,needs_source_and_platform_timestamps
+沙哥,0xf3eb5cedc613899bd793687fb006ffdfb6224444,,,,,2026-05-22 03:47:11,,,,,,,,no-sell,0-5m,likely_copycat_or_noise,40,needs_source_and_platform_timestamps
+向上的力量,0x1396e40695e626c81549a4a409fb1ec46b794444,,,,,2026-04-19 05:50:18,,,,,,,,0-5m,6h-24h,needs_human_check,55,needs_source_and_platform_timestamps
+LUNA,0x396f3e64035f01755905af2b8077174f31a8cd1f,,,,,2026-03-18 06:22:26,,,,,,,,no-sell,6h-24h,likely_copycat_or_noise,25,needs_source_and_platform_timestamps
+bv4,0x970c5f694c3f43b7c6e9f730e8c82da51c357777,,,,,2026-05-10 07:11:31,,,,,,,,5-30m,1h-6h,likely_copycat_or_noise,25,needs_source_and_platform_timestamps
+U,0x678610f52e9dcb2d10f3c6a6a6ce344929aa4444,,,,,2026-02-13 05:12:20,,,,,,,,1d-3d,7d+,likely_copycat_or_noise,40,needs_source_and_platform_timestamps
+福马,0x9debbe35b9c5d20d505f68049a87322fbcbe7777,,,,,2026-04-18 05:13:02,,,,,,,,no-sell,0-5m,likely_copycat_or_noise,40,needs_source_and_platform_timestamps
+大表哥,0x782dc29289a1754a7b9bfc809e8b136e5b854444,,,,,2026-05-28 10:42:55,,,,,,,,no-sell,0-5m,likely_copycat_or_noise,27,needs_source_and_platform_timestamps
+ASTEROID,0x8fd3437a13b298dd2e98db902c56970a9d3c4985,,,,,2026-04-26 16:04:42,,,,,,,,no-sell,0-5m,likely_copycat_or_noise,12,needs_source_and_platform_timestamps
+潜龙勿用,0x2e591b13d3caf27adf1db47d75278315d0754444,,,,,2026-03-15 09:21:33,,,,,,,,no-sell,0-5m,likely_copycat_or_noise,15,needs_source_and_platform_timestamps
+Crypto Summer,0x47ad200c9b052284e9a585d71f5f938bae154444,,,,,2026-04-14 06:44:17,,,,,,,,1h-6h,3d-7d,likely_copycat_or_noise,12,needs_source_and_platform_timestamps
+Atlаs Ѕcоut,0xf9fa6fc80b0f4d505013182d4ca2b06bef9e4444,,,,,2026-03-25 04:18:42,,,,,,,,1h-6h,7d+,likely_copycat_or_noise,12,needs_source_and_platform_timestamps
+MPW,0xcc7abc4a67837d1c392f9c4f75cd21a3e74d4444,,,,,2026-05-27 10:02:39,,,,,,,,5-30m,1h-6h,likely_copycat_or_noise,12,needs_source_and_platform_timestamps
+USDT,0x55d398326f99059ff775485246999027b3197955,,,,,2026-02-09 15:37:15,,,,,,,,no-sell,0-5m,likely_copycat_or_noise,0,needs_source_and_platform_timestamps
+罗永浩,0x9c17ba5f1c4a08692bdfa10fab258d9fa1df4444,,,,,2026-05-15 12:39:15,,,,,,,,5-30m,5-30m,likely_copycat_or_noise,15,needs_source_and_platform_timestamps
+Freedom of Money,0xd98abf5385231aa53aac9fd62ba2e8b660334444,,,,,2026-04-03 03:48:52,,,,,,,,0-5m,1h-6h,likely_copycat_or_noise,12,needs_source_and_platform_timestamps
+USDC,0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d,,,,,2026-02-11 09:49:28,,,,,,,,no-sell,1d-3d,likely_copycat_or_noise,0,needs_source_and_platform_timestamps
+FORM,0x5b73a93b4e5e4f1fd27d8b3f8c97d69908b5e284,,,,,2026-04-14 07:04:19,,,,,,,,7d+,7d+,likely_copycat_or_noise,0,needs_source_and_platform_timestamps
+Kimiclaw,0x712fb754e1c331ad8972009d7a1f1c2de0d94444,,,,,2026-03-10 10:18:31,,,,,,,,7d+,7d+,likely_copycat_or_noise,27,needs_source_and_platform_timestamps
+MEME SZN,0xf850da43028ac894cb26b131500d98c40b8c4444,,,,,2026-05-05 08:34:35,,,,,,,,no-sell,0-5m,likely_copycat_or_noise,12,needs_source_and_platform_timestamps
+帕鲁,0xf339968b81663d6a7558562fce81f0fca3cb4444,,,,,2026-04-18 04:40:33,,,,,,,,30m-1h,6h-24h,likely_copycat_or_noise,27,needs_source_and_platform_timestamps
+FOMA,0x03a0a8700fa3809c6c2d637babd841296da57777,,,,,2026-05-19 16:41:07,,,,,,,,no-sell,3d-7d,likely_copycat_or_noise,12,needs_source_and_platform_timestamps
+告密者,0x42071b6e783bd49239c0a65229113da3c6b64444,,,,,2026-04-08 05:52:04,,,,,,,,30m-1h,1d-3d,likely_copycat_or_noise,27,needs_source_and_platform_timestamps
+Hacker,0x434adc0fbec0e7eff3b656d6399ba7a0c4564444,,,,,2026-01-26 12:33:12,,,,,,,,7d+,7d+,likely_copycat_or_noise,12,needs_source_and_platform_timestamps
+大黄,0x574c192ed489562a4461366d145f9a853aa54444,,,,,2026-05-04 09:59:02,,,,,,,,no-sell,3d-7d,likely_copycat_or_noise,27,needs_source_and_platform_timestamps
+fdog,0x19c777239f3175066a8293008e5e164d0fd24444,,,,,2026-04-14 07:05:33,,,,,,,,0-5m,6h-24h,likely_copycat_or_noise,12,needs_source_and_platform_timestamps
+中文时代,0x638de589e66b7b7c59983937a903b1d086254444,,,,,2026-04-21 05:38:55,,,,,,,,1h-6h,7d+,likely_copycat_or_noise,27,needs_source_and_platform_timestamps
